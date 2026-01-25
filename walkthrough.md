@@ -33,7 +33,7 @@ I have updated the portfolio website to be fully responsive, ensuring a seamless
     - **Header**: Flex column layout for Company/Role and Year on mobile for better readability.
     - **Typography**: Adjusted font sizes for title and description on mobile devices.
 - **Portfolio**:
-    - **Cards**: Images are now fully responsive (`w-full`) to adapt to different screen sizes.
+    - **Cards**: Images are responsive (`w-full`) to adapt to different screen sizes.
     - Adjusted padding and font sizes.
     - Ensured lists and cards wrap or stack correctly.
 - **Contact**:
@@ -49,13 +49,17 @@ I have updated the portfolio website to be fully responsive, ensuring a seamless
 - **Navigation**: Updated Portfolio Cards to link to the detail page.
 - **Header**: Displays a "Back" button instead of the menu to facilitate easy return to the main list.
 
+### Documentation
+- **README**: Personalized the `README.md` to focus on Septian's professional profile, experience, and skills, making it a true introduction to the portfolio owner.
+
 ## Verification Results
 
 ### Automated Checks
 - Verified correct file modifications using file reading tools.
 
 ### Manual Verification Required
-- **Portfolio Images**: Check the portfolio section on a mobile device. The large project images should now span the full width of their container and scale down correctly without being cut off or maintaining a fixed 530px width.
+- **Documentation**: Read the `README.md` in the root directory to ensure it correctly introduces Septian.
+- **Portfolio Images**: Check the portfolio section on a mobile device. The large project images should now span the full width of their container.
 - **About Me**: Verify the image background is now white (it was previously gray).
 - **Contact Section**: On mobile, verify the social icons are centered. On desktop, verify they are aligned to the left.
 - **Experience Section**: On mobile, verify the text "Company Name -> Role" is above the "Year". Verify font sizes are appropriate.

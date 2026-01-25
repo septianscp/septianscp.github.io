@@ -1,5 +1,5 @@
-# Task: Fix Portfolio Image Responsiveness
+# Task: Personalize Documentation
 
-- [x] Check `PortfolioCard` styles <!-- id: 0 -->
-- [x] Add `w-full h-auto` to Image component <!-- id: 1 -->
-- [x] Verify responsiveness <!-- id: 2 -->
+- [x] Extract bio and professional info from `constant/Body` and `Home` <!-- id: 0 -->
+- [x] Rewrite `README.md` to focus on Septian's profile <!-- id: 1 -->
+- [x] Verify content <!-- id: 2 -->
