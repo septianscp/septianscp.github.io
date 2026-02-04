@@ -27,12 +27,6 @@ const AboutMe = ({ setActive }: { setActive: (active: string) => void }) => {
           consistent, and easy to evolve over time. My work often sits at the
           intersection of design and engineering, where I translate design
           intent into reusable components and scalable UI patterns.
-          <br /> <br />
-          Earlier in my career, I contributed to a UI system at Renos, working
-          closely with designers to define component standards and visual
-          consistency. That experience shaped how I approach frontend
-          development today, especially when working with design systems and
-          component-driven architectures.
           <br />
           <br />
           I value clear communication, thoughtful problem-solving, and ownership
@@ -41,8 +35,7 @@ const AboutMe = ({ setActive }: { setActive: (active: string) => void }) => {
           polished.
           <br />
           <br />
-          I’m based in Kuningan, Indonesia, and open to remote or hybrid
-          opportunities.
+          I’m based in Kuningan, Indonesia, and open to remote or hybrid opportunities.
         </div>
       </div>
     </div>

@@ -33,7 +33,10 @@ I have updated the portfolio website to be fully responsive, ensuring a seamless
     - **Header**: Flex column layout for Company/Role and Year on mobile for better readability.
     - **Typography**: Adjusted font sizes for title and description on mobile devices.
 - **Portfolio**:
-    - **Cards**: Images are responsive (`w-full`) to adapt to different screen sizes.
+    - **Preview**: Home page now displays the top 3 projects with a **"View All Projects"** button.
+    - **Cards**: Images are responsive (`w-full`) and have **rounded corners** (`rounded-xl`).
+    - **Image Handling**: Updated to prioritize `images[0]` from the array if available.
+    - **Data Update**: Updated to support new `title` and `menus` data structure.
     - Adjusted padding and font sizes.
     - Ensured lists and cards wrap or stack correctly.
 - **Contact**:
@@ -41,16 +44,19 @@ I have updated the portfolio website to be fully responsive, ensuring a seamless
     - Fixed potential overflow in social icons.
 - **IDs**: Added unique IDs to all section components to enable scroll navigation.
 
-### Portfolio Detail Page
-- **Layout**: Updated to Title -> Carousel Images -> Subtitle -> Descriptions.
-- **Dynamic Routing**: Implementation of `/app/portfolio/[index]/page.tsx` to display details for each project. URLs now start at 1.
-- **Data Update**: Updated `PROJECTS` constant with detailed descriptions, subtitles, and image arrays.
-- **Carousel**: Added a custom Carousel component using `embla-carousel-react`.
-- **Navigation**: Updated Portfolio Cards to link to the detail page.
-- **Header**: Displays a "Back" button instead of the menu to facilitate easy return to the main list.
+### Portfolio Pages
+- **List Page**: Created `/portfolio` to display the full list of projects (Dark Theme). **Title updated to "My Portfolios"**.
+- **Detail Page**:
+    - **Theme**: Updated to **Dark Theme** (Black background, White text) for consistency and focus.
+    - **Layout**: Title -> Carousel Images -> Subtitle -> Visit Website Link -> Descriptions (Dynamic Menus).
+    - **Dynamic Routing**: Implementation of `/app/portfolio/[index]/page.tsx` to display details for each project. URLs now start at 1.
+    - **Data Rendering**: Updated to handle the new `menus` structure.
+    - **Carousel**: Swipeable image gallery.
+    - **Navigation**: Updated Portfolio Cards to link to the detail page.
+    - **Header**: Displays a "Back" button instead of the menu.
 
 ### Documentation
-- **README**: Personalized the `README.md` to focus on Septian's professional profile, experience, and skills, making it a true introduction to the portfolio owner.
+- **README**: Personalized the `README.md` to focus on Septian's professional profile, experience, and skills.
 
 ## Verification Results
 
@@ -58,13 +64,6 @@ I have updated the portfolio website to be fully responsive, ensuring a seamless
 - Verified correct file modifications using file reading tools.
 
 ### Manual Verification Required
-- **Documentation**: Read the `README.md` in the root directory to ensure it correctly introduces Septian.
-- **Portfolio Images**: Check the portfolio section on a mobile device. The large project images should now span the full width of their container.
-- **About Me**: Verify the image background is now white (it was previously gray).
-- **Contact Section**: On mobile, verify the social icons are centered. On desktop, verify they are aligned to the left.
-- **Experience Section**: On mobile, verify the text "Company Name -> Role" is above the "Year". Verify font sizes are appropriate.
-- **Header Detail Mode**: Go to a project detail page. Verify the central menu is gone and a "Back" button is visible on the right.
-- **Sticky Header**: Scroll down content and verify the header remains fixed at the top with a white background and shadow.
-- **Portfolio Detail**: Click on any project card in the Portfolio section. Verify it navigates to the detail page.
-- **Carousel**: On the detail page, verify you can swipe or click dots to change images.
-- **Mobile Menu**: Open the site on a mobile view (width < 768px) and test the hamburger button.
+- **Portfolio List**: Go to `/portfolio`. Verify the title says "**My Portfolios**".
+- **Portfolio Images**: Verify that all portfolio images (on Home and List page) have clear **rounded corners**.
+- **Dark Theme**: Verify the dark theme on the detail page.

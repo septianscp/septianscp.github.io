@@ -1,5 +1,6 @@
-# Task: Personalize Documentation
+# Task: Update Portfolio UI
 
-- [x] Extract bio and professional info from `constant/Body` and `Home` <!-- id: 0 -->
-- [x] Rewrite `README.md` to focus on Septian's profile <!-- id: 1 -->
-- [x] Verify content <!-- id: 2 -->
+- [x] Rename "All Projects" to "My Portfolios" in `app/portfolio/page.tsx` <!-- id: 0 -->
+- [x] Check `PortfolioCard` rounded styling <!-- id: 1 -->
+- [x] Update `PortfolioCard` rounded class to `rounded-xl` <!-- id: 2 -->
+- [x] Verify changes <!-- id: 3 -->

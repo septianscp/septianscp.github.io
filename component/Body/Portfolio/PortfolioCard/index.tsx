@@ -5,10 +5,11 @@ const PortfolioCard = ({
   item,
   index,
 }: {
-  item: { img: string; name: string; description: string; link: string };
+  item: { img: string; title: string; description: string; link: string; images?: string[] };
   index: number;
 }) => {
   const router = useRouter();
+  const displayImage = item.images && item.images.length > 0 ? item.images[0] : item.img;
 
   return (
     <div
@@ -20,9 +21,9 @@ const PortfolioCard = ({
       <Image
         className={`${
           index % 2 === 0 ? "md:!pl-0" : "md:!pr-0"
-        } px-0 md:px-16 py-10 rounded cursor-pointer transition-transform hover:scale-105 w-full h-auto`}
-        src={item.img}
-        alt={item.name}
+        } px-0 md:px-16 py-10 rounded-xl cursor-pointer transition-transform hover:scale-105 w-full h-auto`}
+        src={displayImage}
+        alt={item.title}
         width={530}
         height={398}
         style={{ maxWidth: 530 }}
@@ -31,7 +32,7 @@ const PortfolioCard = ({
       <div style={{ maxWidth: 582 }} className="flex flex-col gap-5 px-5 md:px-0">
         <div className="text-3xl md:text-5xl font-bold">{index + 1}</div>
         <div className="text-2xl md:text-4xl font-bold text-white align-center ">
-          {item.name}
+          {item.title}
         </div>
         <div className="text-base text-white align-center ">
           {item.description}
