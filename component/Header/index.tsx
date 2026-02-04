@@ -71,6 +71,7 @@ const Header = ({ active, isDetail = false }: { active: string; isDetail?: boole
           <button
             style={{ width: 153, height: 56 }}
             className="hidden md:flex items-center cursor-pointer gap-2 bg-black text-white text-xl px-5 py-4 rounded font-semibold"
+            onClick={() => window.open("/septian-frontend-2026.pdf", "_blank")}
           >
             <div>Resume</div>
             <Image
@@ -149,6 +150,7 @@ const Header = ({ active, isDetail = false }: { active: string; isDetail?: boole
             </div>
           ))}
           <button
+          onClick={() => window.open("/septian-frontend-2026.pdf", "_blank")}
             className="flex items-center cursor-pointer gap-2 bg-black text-white text-xl px-5 py-3 rounded font-semibold"
           >
             <div>Resume</div>

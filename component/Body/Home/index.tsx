@@ -32,7 +32,7 @@ const Home = ({ setActive }: { setActive: () => void }) => {
           </div>
         </div>
 
-        <div className="flex gap-4 md:gap-8 justify-center md:justify-start mt-4 md:mt-0 md:absolute md:bottom-[-27px]">
+        <div className="flex gap-4 md:gap-8 justify-center md:justify-start mt-4 md:mt-0 md:absolute md:bottom-[-170px]">
           {SOCIAL.map((item) => (
             <SocialCard key={item.name} item={item} />
           ))}
