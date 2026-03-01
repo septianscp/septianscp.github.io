@@ -10,7 +10,9 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full min-h-screen" style={{ maxWidth: 1920, margin: "auto" }}>
       <Header active={active} />
-      <Body setActive={setActive} />
+      <main>
+        <Body setActive={setActive} />
+      </main>
       <Footer />
     </div>
   );

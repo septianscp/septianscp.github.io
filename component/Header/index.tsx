@@ -99,6 +99,7 @@ const Header = ({ active, isDetail = false }: { active: string; isDetail?: boole
         {/* Mobile Menu Button - Hide if detail */}
         {!isDetail && (
           <button
+            aria-label="Menu"
             className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
