@@ -16,7 +16,7 @@ const Home = ({ setActive }: { setActive: () => void }) => {
               Hello, I’m <b>Septian.</b>
             </div>
             <div className="font-bold text-3xl md:text-5xl">
-              Frontend <span className="text-outline">Developer</span>
+              Senior Frontend <span className="text-outline">Developer</span>
             </div>
             <div className="text-3xl md:text-5xl">
               Based in <b>Kuningan, Indonesia.</b>
@@ -25,10 +25,11 @@ const Home = ({ setActive }: { setActive: () => void }) => {
           <div
             className="text-base text-gray-500 max-w-full md:max-w-[580px] text-center md:text-left"
           >
-            Frontend Developer with 6+ years of experience building
-            production-ready web applications. Focused on React, Next.js, and
-            clean UI implementation. Experienced in collaborating with
-            cross-functional teams and delivering scalable interfaces.
+            Frontend Developer & Team Lead with 6+ years of experience
+            building scalable, production-ready web applications. Most recently
+            led the Seller Center platform at Renos.id. Strong expertise in
+            React, Next.js, and TypeScript with a focus on clean architecture,
+            design systems, and reliable delivery in Agile/CI/CD environments.
           </div>
         </div>
 

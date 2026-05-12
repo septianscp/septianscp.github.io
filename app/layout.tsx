@@ -9,8 +9,8 @@ const sora = Sora({
 
 
 export const metadata: Metadata = {
-  title: "septianscp - Frontend Developer",
-  description: "Frontend Developer. I craft clean, fast, and scalable web applications.",
+  title: "Septian Setia — Senior Frontend Developer & Team Lead",
+  description: "Senior Frontend Developer & Team Lead with 6+ years of experience building scalable, production-ready web applications. Specializing in React, Next.js, and TypeScript.",
 };
 
 export default function RootLayout({

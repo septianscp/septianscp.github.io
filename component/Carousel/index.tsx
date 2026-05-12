@@ -20,6 +20,9 @@ const Carousel = (props: PropType) => {
     setSelectedIndex(emblaApi.selectedScrollSnap());
   }, [emblaApi]);
 
+  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
+
   useEffect(() => {
     if (!emblaApi) return;
     
@@ -48,6 +51,27 @@ const Carousel = (props: PropType) => {
           ))}
         </div>
       </div>
+
+      {/* Navigation Buttons */}
+      <button
+        onClick={scrollPrev}
+        className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-black p-3 rounded-full shadow-lg z-10 transition-colors border border-gray-200"
+        aria-label="Previous slide"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </button>
+
+      <button
+        onClick={scrollNext}
+        className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-black p-3 rounded-full shadow-lg z-10 transition-colors border border-gray-200"
+        aria-label="Next slide"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </button>
 
       {/* Dots */}
       <div className="flex justify-center gap-2 mt-4">

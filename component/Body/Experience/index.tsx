@@ -8,9 +8,8 @@ const Experience = ({ setActive }: { setActive: () => void }) => {
             <div className="text-3xl md:text-5xl py-5 p-5 text-white align-center text-center">My <b>Experience</b></div>
             <div className="flex flex-col gap-5 py-10 px-6">
                 {
-                    WORK_EXPERIENCE.map((item, index) => <ExperienceCard key={item.company_name_role} item={item} isEven={(index + 1) % 2 === 0} />)
+                    WORK_EXPERIENCE.map((item, index) => <ExperienceCard key={`${item.company_name_role}-${index}`} item={item} isEven={(index + 1) % 2 === 0} />)
                 }
-
             </div>
         </div>
     )

@@ -12,11 +12,12 @@ export const SOCIAL = [{
     img: "/assets/icons/social/github.svg"
 }, {
     name: "Instagram",
-    link: "https://github.com/septianscp",
+    link: "https://www.instagram.com/septianscp/",
     img: "/assets/icons/social/instagram.svg"
 }]
 
-export const SKILL = [{
+export const SKILL = [
+{
     name: "React",
     img: "/assets/icons/skill/icon-react.svg"
 }, {
@@ -25,37 +26,93 @@ export const SKILL = [{
 }, {
     name: "TypeScript",
     img: "/assets/icons/skill/icon-typescript.svg"
-},
-{
+}, {
     name: "JavaScript",
     img: "/assets/icons/skill/icon-javascript.svg"
-},
-{
+}, {
+    name: "React Native",
+    img: "/assets/icons/skill/icon-react.svg"
+}, {
+    name: "Node.js",
+    img: "/assets/icons/skill/icon-nodejs.svg"
+}, {
+    name: "Redux / Zustand",
+    img: "/assets/icons/skill/icon-javascript.svg"
+}, {
+    name: "React Query",
+    img: "/assets/icons/skill/icon-typescript.svg"
+}, {
+    name: "Jest",
+    img: "/assets/icons/skill/icon-cypress.svg"
+}, {
+    name: "Storybook",
+    img: "/assets/icons/skill/icon-storybook.svg"
+}, {
     name: "Git",
     img: "/assets/icons/skill/icon-git.svg"
-},
-{
+}, {
     name: "Figma",
     img: "/assets/icons/skill/icon-figma.svg"
 }]
 
-export const WORK_EXPERIENCE = [{
-    company_name_role: "Frontend Developer → Frontend Team Lead , Renos",
-    year: "2021 - 2026",
+export const WORK_EXPERIENCE = [
+{
+    company_name: "Renos.id",
+    company_subtitle: "Home living e-commerce marketplace · Jakarta, Indonesia",
+    company_name_role: "Frontend Team Lead",
+    employment_type: "Full Time (Hybrid)",
+    year: "Feb 2023 – Feb 2026",
     company_logo: "/assets/icons/company/logo-renos.png",
-    job_description: "Built and maintained React and Next.js applications used in production for internal teams and customers. Translated UI/UX designs into reusable, scalable components, improving development consistency across the frontend codebase. Integrated frontend features with backend APIs, handling loading states, errors, and edge cases in real-world scenarios. Took ownership as Frontend Team Lead, leading task breakdowns, estimations, and delivery planning. Reviewed pull requests and enforced frontend standards to maintain code quality and performance. Collaborated closely with product, backend, and QA teams to ensure smooth and timely feature delivery."
+    job_description: "Led frontend architecture and system design for the Seller Center platform, guiding a cross-functional squad of 4 engineers, 1 QA, 1 UX and 1 PM to deliver seller-facing and internal workflows at scale.",
+    achievements: [
+        "Reduced duplicate development by 40% by standardizing the Renos UI design system and driving adoption across multiple teams.",
+        "Decreased production bugs by 25% by establishing engineering standards and enforcing structured code review governance.",
+        "Improved sprint predictability to 95%+ on-time releases by facilitating daily standups, aligning cross-functional priorities, and proactively removing delivery blockers.",
+        "Minimized integration issues by 35% by initiating API contract documentation to strengthen frontend–backend alignment."
+    ]
 },
 {
-    company_name_role: "Frontend Developer, Lab Me Analitycs",
-    year: "2019 - 2020",
+    company_name: "Renos.id",
+    company_subtitle: "Home living e-commerce marketplace · Jakarta, Indonesia",
+    company_name_role: "Senior Frontend Developer",
+    employment_type: "Full Time (Hybrid)",
+    year: "Sep 2021 – Feb 2023",
+    company_logo: "/assets/icons/company/logo-renos.png",
+    job_description: "Developed and maintained scalable Seller Center features using React and Next.js in production.",
+    achievements: [
+        "Collaborated closely with Product and Backend teams to translate business requirements into reliable UI solutions.",
+        "Refactored legacy components into reusable patterns, improving maintainability and performance.",
+        "Optimized frontend performance and state management, improving page load time by approximately 20%.",
+        "Mentored junior developer and contributed to internal knowledge-sharing initiatives."
+    ]
+},
+{
+    company_name: "Lab Me Analytics",
+    company_subtitle: "Health Tech · Illinois, United States",
+    company_name_role: "Frontend Developer",
+    employment_type: "Contract (Remote)",
+    year: "Oct 2019 – Jan 2020",
     company_logo: "/assets/icons/company/logo-labme.png",
-    job_description: "Collaborated with UX designers to implement functional, user-friendly interfaces based on design specifications. Integrated frontend components with backend APIs and delivered responsive React-based web applications."
+    job_description: "Translated UX specifications into scalable React interfaces, improving UI consistency and accelerating feature delivery.",
+    achievements: [
+        "Improved UI consistency and accelerated feature delivery by 20% by translating UX specifications into scalable React interfaces.",
+        "Reduced integration errors by 25% by integrating frontend features with backend APIs and optimizing state handling."
+    ]
 },
 {
-    company_name_role: "Frontend Developer, Ink & Canvas",
-    year: "2017 - 2021",
+    company_name: "PT Idea Nusantara Cipta (Ink & Canvas)",
+    company_subtitle: "Software House · Bogor, Indonesia",
+    company_name_role: "Frontend Developer",
+    employment_type: "Full Time",
+    year: "Nov 2017 – Aug 2021",
     company_logo: "/assets/icons/company/logo-inc.png",
-    job_description: "Implemented responsive web interfaces from design mockups for multiple client projects. Developed and maintained frontend features while working closely with designers and stakeholders."
+    job_description: "Delivered scalable frontend solutions across multiple client projects with a focus on quality and efficiency.",
+    achievements: [
+        "Improved delivery efficiency by 25% and reduced revisions across client projects.",
+        "Reduced design-to-development rework by 20% by translating mockups into functional, user-focused interfaces.",
+        "Cut duplicated logic by 30% by introducing reusable components and clean code standards.",
+        "Accelerated intern onboarding by 40% through structured frontend mentorship and workflow guidance."
+    ]
 },
 ];
 

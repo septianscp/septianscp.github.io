@@ -35,45 +35,60 @@ export default function PortfolioDetail() {
           <Carousel slides={slides} />
         </div>
 
-        <div className="flex flex-col gap-8 max-w-[1000px] mx-auto w-full">
-            {project.subtitle && (
-                <div className="text-2xl md:text-4xl font-bold text-white text-center md:text-left">
-                    {project.subtitle}
-                </div>
-            )}
+        <div className="flex flex-col gap-10 max-w-[1000px] mx-auto w-full">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-gray-800">
+                {project.subtitle && (
+                    <div className="text-xl md:text-3xl font-semibold text-gray-300">
+                        {project.subtitle}
+                    </div>
+                )}
 
-            {project.link && (
-                <a 
-                    href={project.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-block bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors w-fit mx-auto md:mx-0"
-                >
-                    Visit Website
-                </a>
-            )}
+                {project.link && (
+                    <a 
+                        href={project.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="shrink-0 flex items-center gap-2 bg-white text-black px-6 py-3 rounded-lg font-bold hover:bg-gray-200 transition-colors"
+                    >
+                        Visit Website
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                        </svg>
+                    </a>
+                )}
+            </div>
 
-            <div className="flex flex-col gap-8 text-base text-gray-300 leading-relaxed">
+            <div className="flex flex-col gap-12 text-base text-gray-300 leading-relaxed">
                 {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-                {project.menus && project.menus.map((menu: any, idx: number) => (
-                  <div key={idx} className="flex flex-col gap-3">
-                    <h3 className="text-xl font-bold text-white">{menu.title}</h3>
-                    {menu.type === 'text' && (
-                      <div className="flex flex-col gap-4">
-                         {(menu.value as string[]).map((val, vIdx) => (
-                           <p key={vIdx}>{val}</p>
-                         ))}
+                {project.menus && project.menus.map((menu: any, idx: number) => {
+                  const isRole = menu.title.toLowerCase() === 'role';
+                  return (
+                    <div key={idx} className={`flex flex-col gap-4 ${isRole ? 'bg-gray-900 p-8 rounded-xl border border-gray-700' : ''}`}>
+                      <div className="flex items-center gap-4 mb-2">
+                        <h3 className="text-2xl font-bold text-white tracking-wide">{menu.title}</h3>
+                        {!isRole && <div className="h-px bg-gray-800 flex-1"></div>}
                       </div>
-                    )}
-                    {menu.type === 'bullet' && (
-                      <ul className="list-disc pl-5 flex flex-col gap-2">
-                         {(menu.value as string[]).map((val, vIdx) => (
-                           <li key={vIdx}>{val}</li>
-                         ))}
-                      </ul>
-                    )}
-                  </div>
-                ))}
+                      
+                      {menu.type === 'text' && (
+                        <div className="flex flex-col gap-4 text-lg">
+                           {(menu.value as string[]).map((val, vIdx) => (
+                             <p key={vIdx}>{val}</p>
+                           ))}
+                        </div>
+                      )}
+                      {menu.type === 'bullet' && (
+                        <ul className="flex flex-col gap-4 text-lg">
+                           {(menu.value as string[]).map((val, vIdx) => (
+                             <li key={vIdx} className="flex gap-3 items-start">
+                               <span className="text-white mt-1 shrink-0">▸</span>
+                               <span>{val}</span>
+                             </li>
+                           ))}
+                        </ul>
+                      )}
+                    </div>
+                  );
+                })}
             </div>
         </div>
       </div>
