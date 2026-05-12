@@ -25,11 +25,7 @@ const Home = ({ setActive }: { setActive: () => void }) => {
           <div
             className="text-base text-gray-500 max-w-full md:max-w-[580px] text-center md:text-left"
           >
-            Frontend Developer & Team Lead with 6+ years of experience
-            building scalable, production-ready web applications. Most recently
-            led the Seller Center platform at Renos.id. Strong expertise in
-            React, Next.js, and TypeScript with a focus on clean architecture,
-            design systems, and reliable delivery in Agile/CI/CD environments.
+            I specialize in building scalable web applications, designing clean frontend architectures, and leading cross-functional engineering teams to deliver high-quality products.
           </div>
         </div>
 
